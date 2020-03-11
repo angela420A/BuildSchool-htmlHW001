@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 使table裡的邊框不會有雙重框 */
+        table{
+            border-collapse:collapse;
+            border:1px solid black;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- border: 邊框粗細 邊框顏色 邊框樣式 -->
+    <!-- border屬性指定是否在表格單元格周圍顯示邊框。 -->
+    <!-- border內的數字是指說0|1要或不要 -->
+    <!-- width: 寬度值; -->
+    <table border = "1">
+        <thead>
+            <tr>
+                <th colspan="8">新竹縣竹北市十興國民小學<br>105學年度第一學期圖書館閱讀課表</th>
+                
+            </tr>
+            <tr>
+                <td align="center" colspan="3">年級</td>
+                <th colspan="5">()年級</th>
+                <!-- <td>text</td> -->
+            </tr>
+            <tr>
+                <td align="center" colspan="3">備註</td>
+                <td colspan="5"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3"><font size="1">時<br>間領域期星別午節</font></td>
+                <td align='center' valign="middle">一</td>
+                <td align='center' valign="middle">二</td>
+                <td align='center' valign="middle">三</td>
+                <td align='center' valign="middle",font-weight:bold>四</td>
+                <td align='center' valign="middle">五</td>
+            </tr>
+            <tr>
+                <td rowspan="7">上午</td>
+                <td style="vertical-align:bottom;" colspan="2">07:40~08:00</td>
+                <td colspan="5" style="text-align: center;">早自習</td>
+            </tr>
+            <tr>
+                <td style="vertical-align:bottom;" colspan="2">08:00~08::30</td>
+                <td style="vertical-align:bottom;" colspan="1" valign="button" >師生共讀</td>
+                <td style="vertical-align:bottom;" colspan="1">導師時間</td>
+                <td style="vertical-align:bottom;" colspan="1" style="padding: 0 10px; text-align: center;">升旗<br>(雙周)</td>
+                <td style="vertical-align:bottom;" colspan="1">導師時間</td>
+                <td style="vertical-align:bottom;" colspan="1">師生共讀</td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 20px;">1</td>
+                <td colspan="1">08:35~09:15</td>
+                <th style="vertical-align:bottom;" colspan="1">二樂<br>四檢</th>
+                <th style="vertical-align:bottom;" colspan="1">六儉</th>
+                <th style="vertical-align:bottom;" colspan="1">六樂</th>
+                <th style="vertical-align:bottom;" colspan="1">四良<br>一美</th>
+                <th colspan="1"></th>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 20px;">2</td>
+                <td colspan="1">09:25~10:05</td>
+                <th style="vertical-align:bottom;" colspan="1">六誠<br>三恭<br>一恭</th>
+                <th style="vertical-align:bottom;" colspan="1">三智<br>一溫</th>
+                <th style="vertical-align:bottom;" colspan="1"></th>
+                <th style="vertical-align:bottom;" colspan="1">一良</th>
+                <th style="vertical-align:bottom;" colspan="1">三真<br>二勇</th>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 20px;">3</td>
+                <td colspan="1">10:05~10:35</td>
+                <th colspan="5"></th>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 20px;">3</td>
+                <td colspan="1">10:35~11:15</td>
+                <th style="vertical-align:top;" colspan="1">二溫<br>一誠<br>二仁</th>
+                <th style="vertical-align:bottom;" colspan="1">二勤<br>一勤<br>二智</th>
+                <th style="vertical-align:bottom;" colspan="1">二誠<br>一善</th>
+                <th style="vertical-align:bottom;" colspan="1">一真<br>一樂<br>四儉</th>
+                <th style="vertical-align:bottom;" colspan="1">五仁<br>一智</th>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 20px;">4</td>
+                <td colspan="1">11:25~12:05</td>
+                <th style="vertical-align:button;" colspan="1">六良<br>二良<br>四美</th>
+                <th style="vertical-align:bottom;" colspan="1">二良<br>四溫<br>一儉</th>
+                <th style="vertical-align:bottom;" colspan="1">二美</th>
+                <th style="vertical-align:bottom;" colspan="1">四真<br>六溫</th>
+                <th style="vertical-align:bottom;" colspan="1">四恭<br>二儉</th>
+            </tr>
+            <tr>
+                <td align="center" colspan="3">12:05~12:40</td>
+                <td colspan="5"  style="text-align: center;">午餐</td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3">12:40~13:10</td>
+                <td colspan="5"  style="text-align: center;">午休</td>
+            </tr>
+            <tr>
+                <td rowspan="3">下午</td>
+                <td colspan="1" style="width: 20px;">5</td>
+                <td colspan="1">13:15~13:55</td>
+                <th style="vertical-align:button;" colspan="1">三儉<br>四樂</th>
+                <th style="vertical-align:top;" colspan="1">三美<br>二真<br>五恭</th>
+                <th style="vertical-align:bottom;" colspan="1"></th>
+                <th style="vertical-align:bottom;" colspan="1">六善<br>三誠<br>三良</th>
+                <th style="vertical-align:bottom;" colspan="1">三勤<br>五誠</th>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 20px;">6</td>
+                <td colspan="1">14:05~14:45</td>
+                <th style="vertical-align:button;" colspan="1">五樂</th>
+                <th style="vertical-align:top;" colspan="1">二善<br>二恭<br>五良</th>
+                <th style="vertical-align:bottom;" colspan="1"></th>
+                <th style="vertical-align:bottom;" colspan="1">三樂<br>四誠</th>
+                <th style="vertical-align:bottom;" colspan="1">五美<br>五善<br>五儉</th>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 20px;">7</td>
+                <td colspan="1">15:00~15:40</td>
+                <th style="vertical-align:top;" colspan="1">六美<br>五溫<br>五勤</th>
+                <th style="vertical-align:top;" colspan="1">六真<br>六勤<br>三善</th>
+                <th style="vertical-align:bottom;" colspan="1"></th>
+                <th style="vertical-align:bottom;" colspan="1">六智<br>五真<br>四善</th>
+                <th style="vertical-align:bottom;" colspan="1">六恭<br>五勇<br>五智</th>
+            </tr>
+            
+        </tbody>
+            <td colspan="3">15:40~15:50</td>
+            <td colspan="5"  style="text-align: center;">集體放學</td>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
