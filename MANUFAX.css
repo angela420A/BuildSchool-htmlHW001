@@ -4,12 +4,19 @@
     list-style: none;
     /* overflow: hidden; */
 }
+
+.background-big-pic{
+    height: 900px;
+}
+
 .background-big-pic .BigImg{
     position:absolute;
     width: 100%;
     z-index: -1;
     -webkit-filter:brightness(.5);
+    height: 100%;
 }
+
 .header{
     background-color: black;
     /* width: 100%; */
@@ -18,23 +25,24 @@
     font-size: 20px;
     justify-content: space-between;
 }
-.header-pic{
-    padding-left: 50px;
-}
+
 .header p{
     /* padding-left: 20px; */
     display: inline;
     color: white;
     font-family: Sans-serif;
 }
-.header-address-phone i{
+
+.header-address, .header-phone i{
     color: skyblue;
     padding-left: 10px;
 }
+
 .header-pic{
+    padding-left: 40px;
     color: white;
-    padding-left: 15px;
 }
+
 .inside{
     height: 70px;
     justify-content: center;
@@ -44,25 +52,40 @@
     align-items: center;
     border: none;
 }
+
 .inside-logo{
     width: 500px;
     height: 70px;
 }
+
 .inside-logo img{
     width: 258px;
+    cursor: pointer;
 }
+
 .inside-text a{
     text-decoration: none;
     color: white;
     font-family: Sans-serif;
     font-weight: 700;
     font-size: 20px;
-    margin: 40px;
+    margin: 20px;
 }
+
+.inside-text a:hover{
+    color: skyblue;
+}
+
 .inside-search i{
     color: white;
     margin-left: 50px;
+    cursor: pointer;
 }
+
+.inside-search i:hover{
+    color: skyblue;
+}
+
 .background-text{
     font-family: Sans-serif;
     color: white;
@@ -70,16 +93,20 @@
     padding: 10%;
     /* line-height: 50px; */
 }
+
 .background-text h4{
     font-size: 110px;
     padding: 10px;
 }
+
 .background-text p{
     font-size: 30px;
 }
+
 .background-text-btn{
     padding: 20px;
 }
+
 .background-text-btn button{
     display: inline-block;
     border: 0;
@@ -90,13 +117,16 @@
     font-size: 14px;
     cursor: pointer;
 }
+
 .background-text-btn button:hover{
     background-color: black;
 }
+
 .services-block{
     padding: 100px;
     text-align: center;
 }
+
 .services-block-title{
     font-family: Sans-serif;
     font-size: 40px;
@@ -105,7 +135,9 @@
     letter-spacing: 1.8px;
     padding: 10px;
     position: relative;
+    margin-bottom: 10px;
 }
+
 .services-block-title h4::before{
     position: absolute;
     top: -10px;
@@ -114,10 +146,12 @@
     border: 2px solid skyblue;
     width: 100px;
 }
+
 .services-block-contant{
     display: flex;
     flex-wrap: wrap;
 }
+
 .services-block-contant-item{
     display: flex;
     /* padding: 10px; */
@@ -125,10 +159,12 @@
     height: 286px;
     /* margin: 10px; */
 }
+
 .services-block-contant-item i{
     color: skyblue;
     font-size: 90px;
 }
+
 .services-block-contant-item h5{
     margin-top: 30px;
     font-size: 25px;
@@ -136,29 +172,35 @@
     font-weight: 700;
     line-height: 34px;
 }
+
 .services-block-contant-item p{
     color: #888888;
     font-family: Sans-serif;
     font-size: 20px;
     line-height: 30px;
 }
+
 .services-block-contant-pic{
     padding: 0px 50px;
 }
+
 .history-root{
     background-color: lightgray;
 }
+
 .history-block{
     display: flex;
     width: 100%;
     /* max-width: 1355px; */
 }
+
 .history-block-text{
     display: block;
     text-align: left;
     width: 50%;
     margin: 70px 0px 70px 70px;
 }
+
 .history-block-text-title h4{
     font-family: Sans-serif;
     font-size: 40px;
@@ -170,6 +212,7 @@
     margin-top: 50px;
     position: relative;
 }
+
 .history-block-text-title h4::before{
     content: '';
     position: absolute;
@@ -178,6 +221,7 @@
     border: 2px solid skyblue;
     width: 100px;
 }
+
 .history-block-text-nexttitle p{
     color: #333333;
     font-family: Sans-serif;
@@ -187,6 +231,7 @@
     letter-spacing: 1.08px;
     margin-bottom: 30px;
 }
+
 .history-block-text-index p{
     font-family: sans-serif;
     color: #888888;
@@ -195,6 +240,7 @@
     line-height: 30px;
     margin-bottom: 50px;
 }
+
 .history-block-text-button button{
     display: inline-block;
     border: 0;
@@ -204,16 +250,27 @@
     font-size: 18px;
     cursor: pointer;
 }
+
 .history-block-text-button button:hover{
     background-color: black;
     box-shadow: 1px;
 }
+
 .history-block-pic{
     display: flex;
     justify-content: center;
     width: 50%;
     margin: 70px 70px 70px 0px;
 }
+
 .history-block-pic img{
     width: 100%;
 }
+
+/* @media screen and(max-width: 375){
+    .header-address, .header-phone, .header-pic{
+        width: 369.666666666667%;
+        margin: 10px 2.66666666666667%;
+        flex-wrap: wrap;
+    }
+} */
